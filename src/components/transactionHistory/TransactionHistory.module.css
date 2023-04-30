@@ -24,5 +24,6 @@
 }
 
 .transactionHistory tbody tr:hover {
+    cursor: pointer;
     background-color: #e6f5a4;
 }
