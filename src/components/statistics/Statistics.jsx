@@ -7,7 +7,7 @@ export default function Statistics({ title, stats }) {
         {title && (<h2 className={css.title}>{title}</h2>)}
             <ul className={css.statList}>
             {stats.map(({ id, label, percentage }) => (
-            <li className={css.item} key={id}>
+              <li className={css.item} style={{backgroundColor: getRandomColor()} } key={id}>
                <span className={css.label}>{label}</span>
                <span className={css.percentage}>{percentage}%</span>
             </li>         
@@ -15,6 +15,12 @@ export default function Statistics({ title, stats }) {
           </ul>
       </section>
     )
+}
+
+function getRandomColor() {
+    return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
 
 Statistics.propTypes = {

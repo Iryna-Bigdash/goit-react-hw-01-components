@@ -1,22 +1,21 @@
 .statistics {
     text-align: center;
-    background-color: azure;
     padding: 100px 0;
 }
 
 .title {
     font-size: 20px;
-    width: 400px;
+    width: 50%;
     margin: 0 auto;
     padding: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: azure;
     border: 1px solid rgb(220, 220, 220);
 }
 
 .statList {
     display: flex;
     margin: 0 auto;
-    width: 400px;
+    width: 50%;
 }
 
 .item {
@@ -30,5 +29,12 @@
 }
 
 .label {
+    font-weight: bold;
+    color: white;
     margin-bottom: 10px;
+}
+
+.percentage {
+    font-weight: bold;
+    color: white;
 }
