@@ -1,0 +1,17 @@
+.friendList {
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+    margin: 0 auto;
+    background-color: rgb(211, 237, 237);
+}
+
+.item {
+    display: flex;
+    /* flex-grow: 1;
+    max-width: 100%; */
+    background-color: rgb(245, 229, 229);
+    border: 1px solid rgb(192, 187, 187);
+    flex-direction: column;
+    padding: 20px;
+}
